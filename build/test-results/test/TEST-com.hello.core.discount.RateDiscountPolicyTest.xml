@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hello.core.discount.RateDiscountPolicyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-01T11:54:22" hostname="DESKTOP-08RG97G" time="0.146">
-  <properties/>
-  <testcase name="VIP가 아니면 할인이 적용되지 않아야 한다" classname="com.hello.core.discount.RateDiscountPolicyTest" time="0.146"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
