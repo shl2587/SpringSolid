@@ -1,4 +1,0 @@
-call AppConfig.memberService
-!call AppConfig.memberRepository
-call AppConfig.orderService
-7bean = class com.hello.core.AppConfig$$SpringCGLIB$$0
