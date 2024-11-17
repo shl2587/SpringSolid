@@ -1,6 +1,4 @@
 call AppConfig.memberService
-call AppConfig.orderService
 !call AppConfig.memberRepository
-[memberService -> memberRepository = com.hello.core.member.MemoryMemberRepository@1cf2fed4
-ZorderService -> memberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf
-JmemberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf
+call AppConfig.orderService
+7bean = class com.hello.core.AppConfig$$SpringCGLIB$$0
