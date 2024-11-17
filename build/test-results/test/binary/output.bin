@@ -1,5 +1,6 @@
-ÇbeanDefinitionName = appConfig beanDefinition = Generic bean: class [com.hello.core.AppConfig$$SpringCGLIB$$0]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null
-ÖbeanDefinitionName = memberService beanDefinition = Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=memberService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in com.hello.core.AppConfig
-ÔbeanDefinitionName = orderService beanDefinition = Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=orderService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in com.hello.core.AppConfig
-ÜbeanDefinitionName = memberRepository beanDefinition = Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=memberRepository; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in com.hello.core.AppConfig
-ØbeanDefinitionName = discountPolicy beanDefinition = Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=discountPolicy; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in com.hello.core.AppConfig
+call AppConfig.memberService
+call AppConfig.orderService
+!call AppConfig.memberRepository
+[memberService -> memberRepository = com.hello.core.member.MemoryMemberRepository@1cf2fed4
+ZorderService -> memberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf
+JmemberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf

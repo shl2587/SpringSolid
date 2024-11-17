@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hello.core.singleton.ConfigurationSingletonTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-11-17T11:06:38" hostname="DESKTOP-08RG97G" time="1.07">
+  <properties/>
+  <testcase name="configurationTest()" classname="com.hello.core.singleton.ConfigurationSingletonTest" time="1.07">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expecting actual:&#13;&#10;  com.hello.core.member.MemoryMemberRepository@1cf2fed4&#13;&#10;and:&#13;&#10;  com.hello.core.member.MemoryMemberRepository@3af4e0bf&#13;&#10;to refer to the same object" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting actual:
+  com.hello.core.member.MemoryMemberRepository@1cf2fed4
+and:
+  com.hello.core.member.MemoryMemberRepository@3af4e0bf
+to refer to the same object
+	at com.hello.core.singleton.ConfigurationSingletonTest.configurationTest(ConfigurationSingletonTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[call AppConfig.memberService
+call AppConfig.orderService
+call AppConfig.memberRepository
+memberService -> memberRepository = com.hello.core.member.MemoryMemberRepository@1cf2fed4
+orderService -> memberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf
+memberRepository = com.hello.core.member.MemoryMemberRepository@3af4e0bf
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
