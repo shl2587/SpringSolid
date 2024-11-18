@@ -11,12 +11,29 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OrderServiceImpl implements OrderService{
-    private final MemberRepository memberRepository;
-    // 기존의 코드는 구현체에도 의존하는 형태
-//    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
-    private final DiscountPolicy discountPolicy;
+    private MemberRepository memberRepository;
+    private DiscountPolicy discountPolicy;
+
+
+    /**
+     * 수정자 주입 방식
+     */
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Autowired
+    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+        this.discountPolicy = discountPolicy;
+    }
+    /**
+     * 수정자 주입 방식(끝)
+     */
+
+    /**
+     * 생성자 주입 방식
+     */
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
