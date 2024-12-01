@@ -17,16 +17,16 @@ import org.springframework.context.annotation.FilterType;
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class))
 public class AutoAppConfig {
 
-    @Autowired MemberRepository memberRepository;
-    @Autowired DiscountPolicy discountPolicy;
-
-    @Bean
-    OrderService orderService() {
-        return new OrderServiceImpl(memberRepository, discountPolicy);
-    }
-
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    @Autowired MemberRepository memberRepository;
+//    @Autowired DiscountPolicy discountPolicy;
+//
+//    @Bean
+//    OrderService orderService() {
+//        return new OrderServiceImpl(memberRepository, discountPolicy);
+//    }
+//
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 }
