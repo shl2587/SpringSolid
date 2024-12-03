@@ -1,2 +1,3 @@
-�policyMap = {fixDiscountPolicy=com.hello.core.discount.FixDiscountPolicy@158d255c, rateDiscountPolicy=com.hello.core.discount.RateDiscountPolicy@2ca65ce4}
-vpolicies = [com.hello.core.discount.FixDiscountPolicy@158d255c, com.hello.core.discount.RateDiscountPolicy@2ca65ce4]
+생성자 호출, url : null
+connect : null
+1call : nullmessage : 초기화 연결 메시지
