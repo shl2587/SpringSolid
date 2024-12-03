@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hello.core.scan.AutoAppConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-02T23:23:14" hostname="DESKTOP-08RG97G" time="0.499">
-  <properties/>
-  <testcase name="basicScan()" classname="com.hello.core.scan.AutoAppConfigTest" time="0.499"/>
-  <system-out><![CDATA[memberRepository = com.hello.core.member.MemoryMemberRepository@51abf713
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

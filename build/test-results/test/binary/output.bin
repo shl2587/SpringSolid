@@ -1,1 +1,2 @@
-JmemberRepository = com.hello.core.member.MemoryMemberRepository@51abf713
+œpolicyMap = {fixDiscountPolicy=com.hello.core.discount.FixDiscountPolicy@158d255c, rateDiscountPolicy=com.hello.core.discount.RateDiscountPolicy@2ca65ce4}
+vpolicies = [com.hello.core.discount.FixDiscountPolicy@158d255c, com.hello.core.discount.RateDiscountPolicy@2ca65ce4]
