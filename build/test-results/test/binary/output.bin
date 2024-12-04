@@ -1,3 +1,8 @@
 생성자 호출, url : null
 connect : null
-1call : nullmessage : 초기화 연결 메시지
+2call : null message : 초기화 연결 메시지
+"NetworkClient.afterPropertiesSet
+#connect : http://hello-spring.dev
+Ecall : http://hello-spring.dev message : 초기화 연결 메시지
+NetworkClient.destroy
+!close : http://hello-spring.dev
