@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hello.core.lifecycle.BeanLifeCycleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-04T23:29:01" hostname="DESKTOP-KE3OJFB" time="0.373">
+<testsuite name="com.hello.core.lifecycle.BeanLifeCycleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-04T23:40:33" hostname="DESKTOP-KE3OJFB" time="0.365">
   <properties/>
-  <testcase name="lifeCycleTest()" classname="com.hello.core.lifecycle.BeanLifeCycleTest" time="0.373"/>
+  <testcase name="lifeCycleTest()" classname="com.hello.core.lifecycle.BeanLifeCycleTest" time="0.365"/>
   <system-out><![CDATA[생성자 호출, url : null
 connect : null
 call : null message : 초기화 연결 메시지
