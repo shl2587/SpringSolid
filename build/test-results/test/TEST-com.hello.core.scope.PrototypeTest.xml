@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hello.core.scope.PrototypeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-05T23:30:13" hostname="DESKTOP-08RG97G" time="0.489">
+  <properties/>
+  <testcase name="prototypeBeanFind()" classname="com.hello.core.scope.PrototypeTest" time="0.489"/>
+  <system-out><![CDATA[find prototypeBean1
+PrototypeBean.init
+find prototypeBean2
+PrototypeBean.init
+prototypeBean1 = com.hello.core.scope.PrototypeTest$PrototypeBean@24bdb479
+prototypeBean2 = com.hello.core.scope.PrototypeTest$PrototypeBean@7e3f95fe
+PrototypeBean.destroy
+PrototypeBean.destroy
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

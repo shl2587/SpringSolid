@@ -1,8 +1,8 @@
-생성자 호출, url : null
-connect : null
-2call : null message : 초기화 연결 메시지
-"NetworkClient.afterPropertiesSet
-#connect : http://hello-spring.dev
-Ecall : http://hello-spring.dev message : 초기화 연결 메시지
-NetworkClient.destroy
-!close : http://hello-spring.dev
+find prototypeBean1
+PrototypeBean.init
+find prototypeBean2
+PrototypeBean.init
+LprototypeBean1 = com.hello.core.scope.PrototypeTest$PrototypeBean@24bdb479
+LprototypeBean2 = com.hello.core.scope.PrototypeTest$PrototypeBean@7e3f95fe
+PrototypeBean.destroy
+PrototypeBean.destroy
