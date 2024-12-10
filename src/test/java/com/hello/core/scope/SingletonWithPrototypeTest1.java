@@ -4,6 +4,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
 
@@ -25,41 +26,24 @@ public class SingletonWithPrototypeTest1 {
 
     @Test
     void singletonClientUsePrototype() {
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ClientBean1.class, ClientBean2.class, PrototypeBean.class);
-        ClientBean1 clientBean1 = ac.getBean(ClientBean1.class);
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ClientBean.class, PrototypeBean.class);
+        ClientBean clientBean1 = ac.getBean(ClientBean.class);
         int count1 = clientBean1.logic();
         assertThat(count1).isEqualTo(1);
 
-        ClientBean2 clientBean2 = ac.getBean(ClientBean2.class);
+        ClientBean clientBean2 = ac.getBean(ClientBean.class);
         int count2 = clientBean2.logic();
         assertThat(count2).isEqualTo(1);
     }
 
     @Scope("singleton")
-    static class ClientBean1 {
-        private final PrototypeBean prototypeBean; // 생성 시점에 주입
+    static class ClientBean {
 
         @Autowired
-        public ClientBean1(PrototypeBean prototypeBean) {
-            this.prototypeBean = prototypeBean;
-        }
+        private ApplicationContext ac;
 
         public int logic() {
-            prototypeBean.addCount();
-            return prototypeBean.getCount();
-        }
-    }
-
-    @Scope("singleton")
-    static class ClientBean2 {
-        private final PrototypeBean prototypeBean; // 생성 시점에 주입
-
-        @Autowired
-        public ClientBean2(PrototypeBean prototypeBean) {
-            this.prototypeBean = prototypeBean;
-        }
-
-        public int logic() {
+            PrototypeBean prototypeBean = ac.getBean(PrototypeBean.class);
             prototypeBean.addCount();
             return prototypeBean.getCount();
         }
