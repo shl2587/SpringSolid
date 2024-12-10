@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hello.core.scope.SingletonWithPrototypeTest1" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-12-10T10:10:16" hostname="DESKTOP-08RG97G" time="0.533">
+  <properties/>
+  <testcase name="prototypeFind()" classname="com.hello.core.scope.SingletonWithPrototypeTest1" time="0.466"/>
+  <testcase name="singletonClientUsePrototype()" classname="com.hello.core.scope.SingletonWithPrototypeTest1" time="0.066">
+    <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;expected: 2&#13;&#10; but was: 1" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: 2
+ but was: 1
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at app//com.hello.core.scope.SingletonWithPrototypeTest1.singletonClientUsePrototype(SingletonWithPrototypeTest1.java:36)
+	at java.base@17.0.13/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.13/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.13/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@6731787b
+PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@7c041b41
+PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@372ea2bc
+PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@4cc76301
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

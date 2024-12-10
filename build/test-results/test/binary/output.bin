@@ -1,8 +1,4 @@
-find prototypeBean1
-PrototypeBean.init
-find prototypeBean2
-PrototypeBean.init
-LprototypeBean1 = com.hello.core.scope.PrototypeTest$PrototypeBean@24bdb479
-LprototypeBean2 = com.hello.core.scope.PrototypeTest$PrototypeBean@7e3f95fe
-PrototypeBean.destroy
-PrototypeBean.destroy
+\PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@6731787b
+\PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@7c041b41
+\PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@372ea2bc
+\PrototypeBean.init com.hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@4cc76301
