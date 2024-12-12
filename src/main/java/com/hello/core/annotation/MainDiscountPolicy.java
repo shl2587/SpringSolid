@@ -10,5 +10,5 @@ import java.lang.annotation.*;
 @Inherited
 @Documented
 @Qualifier("mainDiscountPolicy")
-public @interface MainDeiscountPolicy {
+public @interface MainDiscountPolicy {
 }
